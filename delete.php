@@ -3,10 +3,10 @@
 
 <div id="main-content">
     <h2>Delete Record</h2>
-    <form class="post-form" action="" method="post">
+    <form class="post-form" action="./functions/deletedata.php" method="post">
         <div class="form-group">
             <label>Id</label>
-            <input type="text" name="sid" />
+            <input type="text" name="id"/>
         </div>
         <input class="submit" type="submit" name="deletebtn" value="Delete" />
     </form>
