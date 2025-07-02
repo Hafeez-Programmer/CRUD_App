@@ -30,7 +30,7 @@ $result = mysqli_query($conn, $sql) or die("⚠️Query Failed");
                 <td><?php echo $row['sid'] ?></td>
                 <td><?php echo $row['sname'] ?></td>
                 <td><?php echo $row['saddress'] ?></td>
-                <td><?php echo $row['sclass'] ?></td>
+                <td><?php echo $row['cname'] ?></td>
                 <td><?php echo $row['sphone'] ?></td>
                 <td>
                     <a href='edit.php'>Edit</a>
@@ -46,6 +46,7 @@ $result = mysqli_query($conn, $sql) or die("⚠️Query Failed");
     } else {
       echo "<h2>⚠️Sorry,No records found</h2>";
     }
+    mysqli_close($conn);
     ?>
 </div>
 </div>
